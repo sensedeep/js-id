@@ -1,10 +1,10 @@
 {
-    "name": "node-idgen",
-    "description": "Create UUIDs",
-    "version": "0.1.0",
+    "name": "js-id",
+    "description": "Create IDs",
+    "version": "0.1.1",
     "keywords": [
         "node",
-        "idgen"
+        "id"
     ],
     "author": {
         "name": "Michael O'Brien",
@@ -12,12 +12,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/sensedeep/node-idgen.git"
+        "url": "https://github.com/sensedeep/js-id.git"
     },
     "bugs": {
-        "url": "http://github.com/sensedeep/node-idgen/issues"
+        "url": "http://github.com/sensedeep/js-id/issues"
     },
     "license": "UNLICENSED",
+    "main": "index.js",
     "pak": {
         "export": "*.js"
     }
