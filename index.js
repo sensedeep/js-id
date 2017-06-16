@@ -4,6 +4,7 @@
 
 import * as Cluster from 'cluster'
 import * as Crypto from 'crypto'
+import * as Uuid from 'uuid'
 
 var epoch = 1455599858456           // 2-15-16
 var seq = 0
@@ -42,8 +43,12 @@ export class Id {
         })
     }
 
+    static async uuid() {
+        return uuid.v4()
+    }
+
     /*
-        Get an ID unique over a single data center
+        Create a unique ID over a single data center
      */
     static did(datacenter) {
         let buf = new Buffer(8)
