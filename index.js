@@ -48,7 +48,7 @@ export class Id {
     }
 
     /*
-        Create a unique ID over a single data center
+        Create an ID unique over a single data center
      */
     static did(datacenter) {
         let buf = new Buffer(8)
