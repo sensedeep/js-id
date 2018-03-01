@@ -1,7 +1,7 @@
 {
     "name": "js-id",
     "description": "Create IDs",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "keywords": [
         "node",
         "id"
@@ -19,8 +19,6 @@
     },
     "license": "UNLICENSED",
     "main": "index.js",
-    "pak": {
-        "export": "*.js",
-        "origin": "sensedeep/js-id"
-    }
+    "export": "*.js",
+    "origin": "sensedeep/js-id"
 }
