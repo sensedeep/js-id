@@ -12,8 +12,8 @@ var last = 0
 
 export class Id {
 
-    /* 
-        Get a random token. Count is the number of random bytes 
+    /*
+        Get a random token. Count is the number of random bytes
      */
     static async token(count, encoding = 'base64') {
         return new Promise(function (resolve, reject) {
@@ -43,8 +43,12 @@ export class Id {
         })
     }
 
-    static async uuid() {
-        return uuid.v4()
+    static uuidv1() {
+        return Uuid.v1()
+    }
+
+    static uuid() {
+        return Uuid.v4()
     }
 
     /*
