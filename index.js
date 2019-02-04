@@ -55,7 +55,7 @@ export class Id {
         Create an ID unique over a single data center
      */
     static did(datacenter) {
-        let buf = new Buffer(8)
+        let buf = new Buffer.alloc(8)
         let time = Date.getTime() - gen.epoch
         let worker = Cluster.isWorker ? Cluster.worker.id : 0
         let id = ((this.datacenter & 0xFF) << 24 | (worker & 0xFF)) << 16
